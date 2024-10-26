@@ -1,0 +1,74 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+section{
+  width: 1000px;
+  width: 90%;
+  height: 800px;
+  background-color: rgb(194, 208, 204);
+  margin: auto;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  /*flex-direction: row-reverse;
+  flex-direction: column;
+  flex-direction: column-reverse;*/
+  flex-wrap: nowrap;
+  /*flex-wrap: wrap;*/
+  /*flex-wrap: wrap-reverse;*/
+  /*flex-flow: column-reverse wrap;*/
+  justify-content: flex-start;
+  /*justify-content: flex-end;
+  justify-content: center;
+  justify-content: space-between;
+  justify-content: space-around;*/
+  /*align-items: flex-start;
+  align-items: stretch;
+  align-items: flex-end;
+  align-items: baseline;
+  align-content: flex-start;
+  align-content: flex-end;
+  align-content: center;
+  align-content: space-between;
+  align-content: space-around;
+  align-content: space-evenly;*/
+  align-content: 30px;
+}
+section div{
+  height: 200px;
+  width: 200px;
+  background-color: black;
+  color: blue;
+  border: 2px solid red;
+  font-size: 30px;
+  
+}
+/*section div:first-child{
+  background-color: brown;
+  font-size: 75px;
+}
+section div:last-child{
+  font-size: 60px;
+}*/
+section div:nth-child(1){
+  background-color: red;
+  /*order: 3;*/
+  /*flex-grow: 1;*/
+  flex:2 3 250px;
+}
+section div:nth-child(2){
+  background-color: steelblue;
+  /*order: 2;*/
+  /*flex-grow: 2;*/
+  align-self: flex-end;
+}
+section div:nth-child(3){
+  background-color: greenyellow;
+  /*order: 1;*/
+  /*flex-grow: 3;*/
+  /*flex-shrink: 4;*/
+  flex-basis: 300px;
+}
+
